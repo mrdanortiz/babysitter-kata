@@ -1,0 +1,16 @@
+{
+  "extends": ["tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+      "exclude": ["config/**/*.js", "node_modules/**/*.ts", "coverage/lcov-report/*.js"]
+  },
+  "rules": {
+      "ordered-imports": false,
+      "interface-name": [true, "never-prefix"],
+      "no-implicit-dependencies": [false, "dev"],
+      "max-line-length": [true, { "limit": 120, "ignore-pattern": "^import |^export {(.*?)}" }],
+      "no-submodule-imports": false,
+      "jsx-no-lambda": false,
+      "member-access": [true, "no-public"],
+      "quotemark": [true, "double", "jsx-double"]
+  }
+}
