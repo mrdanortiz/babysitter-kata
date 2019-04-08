@@ -1,10 +1,5 @@
-import { Interval, DateTime } from "luxon";
-
-const timeBlocks = {
-    fivePM: DateTime.fromObject({ hour: 17, zone: "America/Chicago" }),
-    elevenPM: DateTime.fromObject({ hour: 23, zone: "America/Chicago" }),
-    fourAM: DateTime.fromObject({ hour: 4, zone: "America/Chicago" }).plus({ hours: 24 }),
-};
+import { Interval } from "luxon";
+import { timeBlocks } from "./timeBlocks";
 
 const fifteenAnHour = Interval.fromDateTimes(timeBlocks.fivePM, timeBlocks.elevenPM);
 const twentyAnHour = Interval.fromDateTimes(timeBlocks.elevenPM, timeBlocks.fourAM);
