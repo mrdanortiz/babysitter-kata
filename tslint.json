@@ -11,6 +11,7 @@
       "no-submodule-imports": false,
       "jsx-no-lambda": false,
       "member-access": [true, "no-public"],
-      "quotemark": [true, "double", "jsx-double"]
+      "quotemark": [true, "double", "jsx-double"],
+      "semicolon": [true, "always"]
   }
 }
