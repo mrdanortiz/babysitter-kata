@@ -23,7 +23,7 @@ const tests = [
         endTime: "4:00 AM",
         startHour: 21,
         endHour: 4,
-        result: 130
+        result: 92
     },
     {
         family: "B",
@@ -31,7 +31,7 @@ const tests = [
         endTime: "3:00 AM",
         startHour: 1,
         endHour: 3,
-        result: 40
+        result: 32
     },
     ,
     {
@@ -40,7 +40,7 @@ const tests = [
         endTime: "1:00 AM",
         startHour: 22,
         endHour: 1,
-        result: 55
+        result: 45
     },
     {
         family: "C",
@@ -48,12 +48,20 @@ const tests = [
         endTime: "3:00 AM",
         startHour: 1,
         endHour: 3,
-        result: 40
+        result: 30
+    },
+    {
+        family: "",
+        startTime: "1:00 AM",
+        endTime: "3:00 AM",
+        startHour: 1,
+        endHour: 3,
+        result: null
     }
 ];
 
 tests.map((test) =>
     it(`calculates based on family ${test.family} from ${test.startTime} - ${test.endTime}`, () => {
-        expect(familySelection("A", test.startHour, test.endHour)).toEqual(test.result);
+        expect(familySelection(test.family, test.startHour, test.endHour)).toEqual(test.result);
     })
 );

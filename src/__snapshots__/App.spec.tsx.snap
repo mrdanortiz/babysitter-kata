@@ -514,7 +514,11 @@ exports[`renders App without crashing 1`] = `
       <br />
       <div
         class="ui container"
-      />
+      >
+        <h2>
+          Total Pay: $ 
+        </h2>
+      </div>
     </div>
   </div>
 </div>

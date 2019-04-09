@@ -128,11 +128,13 @@ export class InputForm extends React.Component {
                     </Form.Field>
                     {
                         this.state.startTime &&
-                        this.state.endTime &&
-                        (totalPay === 0 || totalPay == NaN)
+                            this.state.endTime &&
+                            (totalPay === 0 || typeof totalPay !== "number")
                             ?
                             <Message negative={true}>
-                                <Message.Header>Please choose an end time later than the start time</Message.Header>
+                                <Message.Header>
+                                    Please choose the family and an end time later than the start time
+                                </Message.Header>
                             </Message>
                             : undefined
                     }
@@ -167,9 +169,8 @@ export class InputForm extends React.Component {
                 </Form >
                 <br />
                 <Container>
-                    {this.state.family && this.state.startTime && this.state.endTime ?
+                    {
                         <h2>Total Pay: $ {totalPay}</h2>
-                        : undefined
                     }
                 </Container>
             </Container>
