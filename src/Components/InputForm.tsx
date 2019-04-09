@@ -1,5 +1,5 @@
 import React, { SyntheticEvent } from "react";
-import { Form, CheckboxProps, Container, InputProps, Header } from "semantic-ui-react";
+import { Form, CheckboxProps, Container, InputProps, Header, Message } from "semantic-ui-react";
 import { familySelection } from "../calculators/familySelection";
 
 interface State {
@@ -82,6 +82,11 @@ export class InputForm extends React.Component {
             },
         ];
 
+        const totalPay = familySelection(
+            this.state.family,
+            this.state.startTime,
+            this.state.endTime
+        );
         return (
             <Container textAlign="center">
                 <Form>
@@ -92,7 +97,6 @@ export class InputForm extends React.Component {
                         icon="users"
                         content="Choose Family"
                     />
-
                     <Form.Field>
                         <Container textAlign="center" style={{ display: "inline-flex" }}>
                             <Form.Radio
@@ -122,6 +126,16 @@ export class InputForm extends React.Component {
                             />
                         </Container>
                     </Form.Field>
+                    {
+                        this.state.startTime &&
+                        this.state.endTime &&
+                        (totalPay === 0 || totalPay == NaN)
+                            ?
+                            <Message negative={true}>
+                                <Message.Header>Please choose an end time later than the start time</Message.Header>
+                            </Message>
+                            : undefined
+                    }
                     <Header
                         textAlign="center"
                         style={{ display: "inline" }}
@@ -154,13 +168,7 @@ export class InputForm extends React.Component {
                 <br />
                 <Container>
                     {this.state.family && this.state.startTime && this.state.endTime ?
-                        <h2>Total Pay: $ 
-                            {familySelection(
-                                this.state.family,
-                                this.state.startTime,
-                                this.state.endTime
-                            )}
-                        </h2>
+                        <h2>Total Pay: $ {totalPay}</h2>
                         : undefined
                     }
                 </Container>
