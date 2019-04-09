@@ -88,7 +88,7 @@ export class InputForm extends React.Component {
             this.state.endTime
         );
         return (
-            <Container textAlign="center">
+            <Container textAlign="center" data-testid="inputform">
                 <Form>
                     <Header
                         textAlign="center"
