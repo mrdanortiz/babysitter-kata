@@ -137,7 +137,7 @@ export class InputForm extends React.Component {
                             ?
                             <Message negative={true}>
                                 <Message.Header>
-                                    Please choose the family and an end time later than the start time
+                                    Please choose an end time later than the start time
                                 </Message.Header>
                             </Message>
                             : undefined
@@ -174,7 +174,7 @@ export class InputForm extends React.Component {
                 <br />
                 <Container>
                     {
-                        <h2>Total Pay: $ {totalPay}</h2>
+                        <h2>Total Pay: $ {!isNaN(totalPay) ? totalPay : 0}</h2>
                     }
                 </Container>
             </Container>
