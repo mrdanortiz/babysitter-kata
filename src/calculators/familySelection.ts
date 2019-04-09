@@ -8,9 +8,12 @@ export const familySelection = (family: string, startHour: number, endHour: numb
 
     if (family === "A") {
         return familyACalculations(totalHours);
-    } else if (family === "B") {
+    }
+    if (family === "B") {
         return familyBCalculations(totalHours);
-    } else {
+    }
+    if (family === "C") {
         return familyCCalculations(totalHours);
     }
+    return null;
 };
