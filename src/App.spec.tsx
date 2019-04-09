@@ -4,7 +4,7 @@ import App from "./App";
 
 it("renders App without crashing", () => {
 
-  const { getByTestId } = render(<App />)
+  const { getByTestId } = render(<App />);
   expect(getByTestId("app")).toMatchSnapshot();
 
 });

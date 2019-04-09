@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders NavBar without crashing 1`] = `
+<div
+  data-testid="navbar"
+  class="ui inverted menu"
+>
+  <div
+    class="ui container"
+  >
+    <div
+      class="header item"
+    >
+      Babysitter Kata
+    </div>
+    <a
+      href="https://github.com/mrdanortiz/babysitter-kata"
+      target="_blank"
+      class="item"
+    >
+      Source Code
+    </a>
+  </div>
+</div>
+`;
