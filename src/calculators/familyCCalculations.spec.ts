@@ -31,6 +31,7 @@ const tests = [
         result: 30
     }
 ];
+
 tests.map((test) =>
     it(`calculates the rate for family C if worked from ${test.startTime} - ${test.endTime}`, () => {
         const totalHours = totalHoursWorked(test.startHour, test.endHour);
