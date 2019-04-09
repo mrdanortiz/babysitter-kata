@@ -1,0 +1,490 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders NavBar without crashing 1`] = `
+<div
+  data-testid="inputform"
+  class="ui center aligned container"
+>
+  <form
+    class="ui form"
+  >
+    <h3
+      style="display: inline;"
+      class="ui center aligned header"
+    >
+      <i
+        aria-hidden="true"
+        class="users icon"
+      />
+      <div
+        class="content"
+      >
+        Choose Family
+      </div>
+    </h3>
+    <div
+      class="field"
+    >
+      <div
+        style="display: inline-flex;"
+        class="ui center aligned container"
+      >
+        <div
+          class="inline field"
+        >
+          <div
+            class="ui radio checkbox"
+          >
+            <input
+              class="hidden"
+              name="family"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value="A"
+            />
+            <label>
+              A
+            </label>
+          </div>
+        </div>
+        <div
+          class="inline field"
+        >
+          <div
+            style="margin-left: 100px; margin-right: 100px;"
+            class="ui radio checkbox"
+          >
+            <input
+              class="hidden"
+              name="family"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value="B"
+            />
+            <label>
+              B
+            </label>
+          </div>
+        </div>
+        <div
+          class="inline field"
+        >
+          <div
+            class="ui radio checkbox"
+          >
+            <input
+              class="hidden"
+              name="family"
+              readonly=""
+              tabindex="0"
+              type="radio"
+              value="C"
+            />
+            <label>
+              C
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3
+      style="display: inline;"
+      class="ui center aligned header"
+    >
+      <i
+        aria-hidden="true"
+        class="clock icon"
+      />
+      <div
+        class="content"
+      >
+        Choose Start Time
+      </div>
+    </h3>
+    <div
+      class="field"
+    >
+      <div
+        name="startTime"
+        fuild="true"
+        role="listbox"
+        aria-expanded="false"
+        class="ui selection dropdown"
+        tabindex="0"
+      >
+        <div
+          class="text"
+          role="alert"
+          aria-live="polite"
+        />
+        <i
+          aria-hidden="true"
+          class="dropdown icon"
+        />
+        <div
+          class="menu transition"
+        >
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="true"
+            class="selected item"
+          >
+            <span
+              class="text"
+            >
+              5:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              6:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              7:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              8:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              9:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              10:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              11:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              12:00 AM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              1:00 AM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              2:00 AM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              3:00 AM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              4:00 AM
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3
+      style="display: inline;"
+      class="ui center aligned header"
+    >
+      <i
+        aria-hidden="true"
+        class="clock icon"
+      />
+      <div
+        class="content"
+      >
+        Choose End Time
+      </div>
+    </h3>
+    <div
+      class="field"
+    >
+      <div
+        name="endTime"
+        fuild="true"
+        role="listbox"
+        aria-expanded="false"
+        class="ui selection dropdown"
+        tabindex="0"
+      >
+        <div
+          class="text"
+          role="alert"
+          aria-live="polite"
+        />
+        <i
+          aria-hidden="true"
+          class="dropdown icon"
+        />
+        <div
+          class="menu transition"
+        >
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="true"
+            class="selected item"
+          >
+            <span
+              class="text"
+            >
+              5:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              6:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              7:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              8:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              9:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              10:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              11:00 PM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              12:00 AM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              1:00 AM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              2:00 AM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              3:00 AM
+            </span>
+          </div>
+          <div
+            style="pointer-events: all;"
+            role="option"
+            aria-checked="false"
+            aria-selected="false"
+            class="item"
+          >
+            <span
+              class="text"
+            >
+              4:00 AM
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <br />
+  <div
+    class="ui container"
+  />
+</div>
+`;
