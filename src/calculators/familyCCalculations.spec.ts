@@ -1,4 +1,4 @@
-import { familyACalculations } from "./familyACalculations";
+import { familyCCalculations } from "./familyCCalculations";
 import { totalHoursWorked } from "./totalHoursWorked";
 
 const tests = [
@@ -7,34 +7,34 @@ const tests = [
         endTime: "2:00 AM",
         startHour: 17,
         endHour: 2,
-        result: 150
+        result: 159
     },
     {
         startTime: "6:00 PM",
         endTime: "9:00 PM",
         startHour: 18,
         endHour: 21,
-        result: 45
+        result: 63
     },
     {
         startTime: "9:00 PM",
         endTime: "4:00 AM",
         startHour: 21,
         endHour: 4,
-        result: 130
+        result: 105
     },
     {
         startTime: "1:00 AM",
         endTime: "3:00 AM",
         startHour: 1,
         endHour: 3,
-        result: 40
+        result: 30
     }
 ];
 
 tests.map((test) =>
-    it(`calculates the rate for family A if worked from ${test.startTime} - ${test.endTime}`, () => {
+    it(`calculates the rate for family C if worked from ${test.startTime} - ${test.endTime}`, () => {
         const totalHours = totalHoursWorked(test.startHour, test.endHour);
-        expect(familyACalculations(totalHours)).toEqual(test.result);
+        expect(familyCCalculations(totalHours)).toEqual(test.result);
     })
 );
