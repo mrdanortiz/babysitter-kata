@@ -11,7 +11,7 @@
     "semantic-ui-react": "^0.86.0"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
+    "start": "yarn && react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
@@ -23,6 +23,7 @@
     "@types/react": "^16.8.13",
     "@types/react-dom": "^16.8.3",
     "@types/react-test-renderer": "^16.8.1",
+    "babel-loader": "^8.0.5",
     "react-test-renderer": "^16.8.6",
     "react-testing-library": "^6.1.2",
     "tslint": "^5.15.0",
