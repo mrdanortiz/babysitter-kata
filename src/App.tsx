@@ -2,6 +2,7 @@ import * as React from "react";
 import "./App.css";
 import { Container } from "semantic-ui-react";
 import { NavBar } from "./Components/NavBar";
+import { InputForm } from "./Components/InputForm";
 
 class App extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class App extends React.Component {
       <Container data-testid="app">
         <NavBar />
         <Container textAlign="center" style={{ width: 320 }}>
-          <p>HELLO</p>
+          <InputForm />
         </Container>
       </Container>
     );

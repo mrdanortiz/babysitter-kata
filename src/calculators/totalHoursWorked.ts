@@ -1,5 +1,5 @@
 import { DateTime, Interval } from "luxon";
-import { zone } from "./timeZone";
+import { zone } from "./timezone";
 
 export const totalHoursWorked = (startHour: number, endHour: number) => {
     const startTime = DateTime.fromObject({ hour: startHour, zone });
