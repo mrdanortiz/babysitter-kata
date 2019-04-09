@@ -1,5 +1,5 @@
 import { DateTime } from "luxon";
-import { zone } from "./timeZone";
+import { zone } from "./timezone";
 
 export const timeBlocks = {
     fivePM: DateTime.fromObject({ hour: 17, zone }),

@@ -1,7 +1,7 @@
 import { DateTime, Interval } from "luxon";
 import { calculatePay } from "./calculatePay";
 import { timeBlocks } from "./timeBlocks";
-import { zone } from "./timeZone";
+import { zone } from "./timezone";
 
 it("calculates the pay for the timeBlock worked", () => {
     const startTime = DateTime.fromObject({ hour: 17, zone });
