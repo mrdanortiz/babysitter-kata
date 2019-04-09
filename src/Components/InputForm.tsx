@@ -127,9 +127,10 @@ export class InputForm extends React.Component {
                         </Container>
                     </Form.Field>
                     {
-                        this.state.startTime &&
-                            this.state.endTime &&
-                            (totalPay === 0 || typeof totalPay !== "number")
+                            typeof totalPay !== "number" ||
+                            totalPay === 0 ||
+                            totalPay === null ||
+                            isNaN(totalPay)
                             ?
                             <Message negative={true}>
                                 <Message.Header>
