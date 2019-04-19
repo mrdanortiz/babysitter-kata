@@ -174,7 +174,11 @@ export class InputForm extends React.Component {
                 <br />
                 <Container>
                     {
-                        <h2>Total Pay: $ {!isNaN(totalPay) ? totalPay : 0}</h2>
+                        <h2>Total Pay: $ {
+                            (this.state.family !== undefined &&
+                            this.state.startTime !== undefined &&
+                            this.state.endTime !== undefined &&
+                            !isNaN(totalPay)) ? totalPay : 0}</h2>
                     }
                 </Container>
             </Container>
