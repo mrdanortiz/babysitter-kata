@@ -19,3 +19,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### `yarn test`
 
 Launches the test runner
+
+### Try the Live App
+http://babysitter.mrdanortiz.com/
