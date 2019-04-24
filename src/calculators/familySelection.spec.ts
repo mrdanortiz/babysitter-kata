@@ -56,7 +56,7 @@ const tests = [
         endTime: "3:00 AM",
         startHour: 1,
         endHour: 3,
-        result: null
+        result: 0
     }
 ];
 

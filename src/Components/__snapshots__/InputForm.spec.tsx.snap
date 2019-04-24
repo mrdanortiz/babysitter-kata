@@ -488,6 +488,7 @@ exports[`renders NavBar without crashing 1`] = `
   >
     <h2>
       Total Pay: $ 
+      0
     </h2>
   </div>
 </div>
