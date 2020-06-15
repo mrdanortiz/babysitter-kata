@@ -2,11 +2,6 @@
 
 This is a code kata
 
-## Live App
-
-To try the app out visit:  
-http://mrdanortiz.com
-
 ## Available Scripts
 
 In the project directory, you can run:
